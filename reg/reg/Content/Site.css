@@ -1,0 +1,296 @@
+﻿body {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+.pinok {
+    color: coral;
+    text-decoration: none;
+}
+
+.mainheader {
+    height: 100px;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+
+.logo {
+    float: left;
+    height: auto;
+    margin: 10px;
+}
+
+.reg {
+    float: right;
+}
+
+.nav {
+    float: left;
+}
+
+.ul-reg {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+    .ul-reg li {
+        list-style-type: none;
+        float: left;
+        margin-right: 20px;
+        position: relative;
+    }
+
+#regButton {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 6px 24px;
+    cursor: pointer;
+}
+
+#signButton {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 6px 24px;
+    cursor: pointer;
+}
+
+.regButton:hover {
+    background-color: coral;
+    background: coral;
+}
+
+.signButton:hover {
+    background-color: coral;
+    background: coral;
+}
+
+#windowreg {
+    width: 400px;
+    height: 550px;
+    margin: 40px auto;
+    background: #fff;
+    border: 1px solid #fff;
+    border-radius: 15px;
+    z-index: 150;
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+#windowsing {
+    width: 400px;
+    height: 500px;
+    margin: 40px auto;
+    background: #fff;
+    border: 1px solid #fff;
+    border-radius: 15px;
+    z-index: 150;
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.form {
+    width: 300px;
+    margin: -15px auto 20px auto;
+    text-align: center;
+}
+
+.input {
+    width: 285px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.input1 {
+    width: 300px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.radio {
+    margin-bottom: 10px;
+}
+
+.close {
+    margin: 10px 0 0 320px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    padding: 2px;
+    background: #ccc;
+}
+
+    .close:hover {
+        background: #fff;
+    }
+
+#gray {
+    opacity: 0.8;
+    padding: 15px;
+    background-color: rgba(1,1,1,0.75);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: none;
+    z-index: 100;
+    overflow: auto;
+}
+
+#gray1 {
+    opacity: 0.8;
+    padding: 15px;
+    background-color: rgba(1,1,1,0.75);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: none;
+    z-index: 100;
+    overflow: auto;
+}
+
+.search {
+    display: block;
+    margin-top: 0em;
+    height: 30px;
+}
+
+.isearch {
+    text-align: center;
+    line-height: 15;
+    display: flex;
+    justify-content: center;
+    border: coral;
+}
+
+.inputsearch {
+    width: 500px;
+    height: 30px;
+    border-style: inset;
+    border-color: coral;
+    border-width: 1px;
+}
+
+.nav_buttons {
+    display: flex;
+    justify-content: center;
+}
+
+    .nav_buttons li {
+        list-style-type: none;
+    }
+
+.bn {
+    width: 200px;
+    height: 45px;
+    border-radius: 20px;
+    margin: 20px;
+    background-color: #FFFFFF;
+    border-color: coral;
+}
+
+    .bn:hover {
+        background-color: coral;
+    }
+
+.slider {
+    width: 50%;
+    margin: 50px auto;
+    height: 100px;
+}
+
+.slick-slide {
+    margin: 0px 20px;
+}
+
+    .slick-slide img {
+        width: 100%;
+    }
+
+
+
+.inf {
+    height: 500px;
+}
+
+.footer {
+    background-color: rgb(201, 191, 191);
+    position: relative;
+    height: 100px;
+    bottom: 0px;
+}
+
+.Contact {
+    height: 100px;
+    margin-left: 10px;
+    position: relative;
+    height: 100px;
+}
+
+    .Contact h1 {
+        color: rgb(63, 41, 13);
+    }
+
+.contactlist {
+    width: 100%;
+    float: right;
+    bottom: 10px;
+    position: absolute;
+}
+
+.lic {
+    list-style-type: none;
+    float: right;
+    margin: 10px;
+}
+
+    .lic a {
+        text-decoration: none;
+        color: rgb(63, 41, 13);
+    }
+
+    .lic h4:hover {
+        background-color: coral;
+    }
+
+.cabinet {
+    height: 700px;
+    position: relative;
+}
+
+.title h1 {
+    text-align: center;
+}
+
+.user_information ul li {
+    display: block;
+    list-style: none;
+}
+
+.profphoto img {
+    position: absolute;
+    width: 256px;
+    height: 256px;
+    top: 50px;
+    right: 50px;
+}

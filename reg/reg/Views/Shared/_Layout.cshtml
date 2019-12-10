@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title – приложение ASP.NET</title>
+    @Styles.Render("~/Content/Site.css")
+    @Styles.Render("~/Content/slick/slick.css")
+    @Styles.Render("~/Content/slick/slick-theme.css")
+    @Scripts.Render("~/Scripts/myjs.js")
+
+</head>
+<body>
+    <header class="mainheader">
+        <div class="container">
+            <div class="logo">
+                <a class="pinok">
+                    <h1>
+                        @Html.ActionLink("Pinok Davatel", "Index", "Home", null, new { @class = "pinok" })
+                    </h1>
+                </a>
+            </div>
+        </div>
+        @Html.Partial("_LoginPartial")
+
+
+    </header>
+    @RenderBody()
+    <div class="inf">
+
+    </div>
+    <footer class="footer">
+        <hr>
+        <div class="Contact">
+            <h1>Contact us</h1>
+            <div class="contactlist">
+                <ul class="ulc">
+                    <li class="lic">
+                        <a href="Twitter.com"><h4>Twiter</h4></a>
+                    </li>
+                    <li class="lic">
+                        <a href="Facebook.com"><h4>Facebook</h4></a>
+                    </li>
+                    <li class="lic">
+                        <a href="Instagram.com"><h4>Instagram</h4></a>
+                    </li>
+                    <li class="lic">
+                        <a href="Youtube.com"><h4>Youtube</h4></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    @Scripts.Render("https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+    @Scripts.Render("~/Scripts/slick.min.js")
+    @Scripts.Render("~/Scripts/slider.js")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

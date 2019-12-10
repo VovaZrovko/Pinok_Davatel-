@@ -162,6 +162,9 @@ h1,h2,h3,h4,h5,h6 {
     justify-content: center;
     
 }
+.nav_buttons li{
+    list-style-type: none;
+}
 .bn{
     width: 200px;
     height: 45px;
@@ -216,6 +219,7 @@ h1,h2,h3,h4,h5,h6 {
 .lic {
     list-style-type: none;
     float: right;
+    margin: 10px;
 }
 
 .lic a{

@@ -1,0 +1,32 @@
+﻿@model reg.Models.IndexViewModel
+@{
+    ViewBag.Title = "Manage";
+}
+
+<h2>@ViewBag.Title.</h2>
+
+<p class="text-success">@ViewBag.StatusMessage</p>
+<div>
+    <h4>Changing users log</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>Password:</dt>
+        <dd>
+            [
+            @if (Model.HasPassword)
+            {
+                @Html.ActionLink("Reset Password", "ChangePassword")
+            }
+            else
+            {
+                @Html.ActionLink("Create", "SetPassword")
+            }
+            ]
+        </dd>
+        <dt> Make your project</dt>
+        <dd>
+            @Html.ActionLink("create", "UserProjects", "UProjects", null, new { @class = "pinok" })
+        </dd>
+
+    </dl>
+</div>
