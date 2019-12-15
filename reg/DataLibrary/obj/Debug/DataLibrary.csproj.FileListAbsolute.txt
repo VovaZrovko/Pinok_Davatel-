@@ -1,0 +1,13 @@
+C:\Users\Володимир\source\repos\reg\DataLibrary\bin\Debug\DataLibrary.dll
+C:\Users\Володимир\source\repos\reg\DataLibrary\bin\Debug\DataLibrary.pdb
+C:\Users\Володимир\source\repos\reg\DataLibrary\bin\Debug\Dapper.dll
+C:\Users\Володимир\source\repos\reg\DataLibrary\bin\Debug\Drapper.dll
+C:\Users\Володимир\source\repos\reg\DataLibrary\bin\Debug\Drapper.Validation.dll
+C:\Users\Володимир\source\repos\reg\DataLibrary\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Володимир\source\repos\reg\DataLibrary\bin\Debug\Dapper.xml
+C:\Users\Володимир\source\repos\reg\DataLibrary\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Володимир\source\repos\reg\DataLibrary\obj\Debug\DataLibrary.csprojAssemblyReference.cache
+C:\Users\Володимир\source\repos\reg\DataLibrary\obj\Debug\DataLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Володимир\source\repos\reg\DataLibrary\obj\Debug\DataLibrary.csproj.CopyComplete
+C:\Users\Володимир\source\repos\reg\DataLibrary\obj\Debug\DataLibrary.dll
+C:\Users\Володимир\source\repos\reg\DataLibrary\obj\Debug\DataLibrary.pdb

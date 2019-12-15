@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Web;
@@ -7,6 +8,7 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using reg.Models;
+using static DataLibrary.Logic.ProjectDB;
 
 namespace reg.Controllers
 {
@@ -19,7 +21,22 @@ namespace reg.Controllers
         public ManageController()
         {
         }
-
+        public ActionResult viewProjects()
+        {
+            var data = loadproject(User.Identity.GetUserName());
+            List<UserProjects> project = new List<UserProjects>();
+            foreach (var el in data)
+            {
+                project.Add(new UserProjects
+                {
+                    name = el.name,
+                    small_description = el.shortdescription,
+                    full_description = el.fulldescription,
+                    owner = el.owner
+                });
+            }
+            return View(project);
+        }
         public ManageController(ApplicationUserManager userManager, ApplicationSignInManager signInManager)
         {
             UserManager = userManager;
@@ -220,6 +237,22 @@ namespace reg.Controllers
             return View();
         }
 
+        // GET: /Manage/Create
+        public ActionResult Create()
+        {
+            return View();
+        }
+        [HttpPost]
+        public ActionResult Create(UserProjects model)
+        {
+            model.owner = User.Identity.GetUserName();
+            if (!ModelState.IsValid)
+            {
+                createproject(model.name,model.small_description,model.full_description,model.owner);
+                return RedirectToAction("Index");
+            }
+            return View();
+        }
         //
         // POST: /Manage/ChangePassword
         [HttpPost]

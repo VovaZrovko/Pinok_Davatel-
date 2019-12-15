@@ -115,3 +115,7 @@ C:\Users\Володимир\source\repos\reg\reg\obj\Debug\reg.csproj.CoreCompil
 C:\Users\Володимир\source\repos\reg\reg\obj\Debug\reg.csproj.CopyComplete
 C:\Users\Володимир\source\repos\reg\reg\obj\Debug\reg.dll
 C:\Users\Володимир\source\repos\reg\reg\obj\Debug\reg.pdb
+C:\Users\Володимир\source\repos\reg\reg\bin\DataLibrary.dll
+C:\Users\Володимир\source\repos\reg\reg\bin\Dapper.dll
+C:\Users\Володимир\source\repos\reg\reg\bin\DataLibrary.pdb
+C:\Users\Володимир\source\repos\reg\reg\bin\Dapper.xml

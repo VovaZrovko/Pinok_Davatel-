@@ -27,8 +27,14 @@ h1, h2, h3, h4, h5, h6 {
     float: left;
     height: auto;
     margin: 10px;
-}
 
+}
+.pinocimg {
+    height:100px;
+    position:relative;
+    bottom:120px;
+    left:100px;
+}
 .reg {
     float: right;
 }

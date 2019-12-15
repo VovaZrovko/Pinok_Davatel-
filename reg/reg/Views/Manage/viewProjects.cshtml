@@ -1,0 +1,49 @@
+﻿@model IEnumerable<reg.Models.UserProjects>
+
+@{
+    ViewBag.Title = "All Projects";
+}
+
+<h2>All Projects</h2>
+
+<p>
+    @Html.ActionLink("Create New Project", "Create")
+</p>
+
+@*<ul>
+    <li>
+        @Html.DisplayNameFor(model => model.name)
+    </li>
+    <li>
+        @Html.DisplayNameFor(model => model.small_description)
+    </li>
+    <li>
+        @Html.DisplayNameFor(model => model.full_description)
+    </li>
+    <li>
+        @Html.DisplayNameFor(model => model.owner)
+    </li>
+</ul>*@
+
+@foreach (var item in Model)
+{
+<ul>
+    <li>
+        @Html.DisplayNameFor(model => model.name) - @Html.DisplayFor(modelItem => item.name)
+    </li>
+    <li>
+        @Html.DisplayNameFor(model => model.small_description) - @Html.DisplayFor(modelItem => item.small_description)
+    </li>
+    <li>
+        @Html.DisplayNameFor(model => model.full_description) - @Html.DisplayFor(modelItem => item.full_description)
+    </li>
+    <li>
+        @Html.DisplayNameFor(model => model.type) - @Html.DisplayFor(modelItem => item.type)
+    </li>
+    <li>
+        @Html.DisplayNameFor(model => model.owner) - @Html.DisplayFor(modelItem => item.owner)
+    </li>
+</ul>
+}
+
+
